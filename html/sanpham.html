@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Bán Laptop</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <div class="main" style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; overflow: hidden;">
+        <!-- Nav -->
+        <nav class="navbar navbar-expand-lg navbar-dark p-0 fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="home.html">
+                    <img src="../img/predator.svg" alt="">
+                </a>
+                <div class="collapse navbar-collapse">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a href="home.html" class="nav-link" style="position: relative;">Trang chủ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" style="position: relative;">Giới thiệu</a>
+                            <ul class="bg-white wrap__subnav">
+                                <li>
+
+                                </li>
+                                <li>
+                                    <div class="block-subnav__info">
+                                        <a class="block-subnav__link" href="../html/sitemap.html">Sitemap</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" style="position: relative;">Liên hệ</a>
+                            <ul class="bg-white wrap__subnav">
+                                <li>
+                                    <div class="block-subnav__info">
+                                        <i class="fa-brands fa-facebook" style="color: #2977ff;"></i>
+                                        <a href="https://www.facebook.com/ngocngan.hoangthi.77?mibextid=LQQJ4d" class="block-subnav__link">Facebook</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="block-subnav__info">
+                                        <i class="fa-brands fa-instagram" style="color: #000000;"></i>
+                                        <a href="https://www.instagram.com/neyguang.4" class="block-subnav__link">Instagram</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../html/sukien.html" class="nav-link" style="position: relative;">Sự kiện</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../html/sanpham.html" class="nav-link" style="position: relative;">Sản phẩm</a>
+                        </li>
+                    </ul>
+                </div>
+                <form class="d-flex align-items-center">
+                    <div class="wrap__icon-item me-3">
+                        <i class="fa-solid fa-phone me-1" style="color: #ffffff;font-size: 20px;"></i>
+                        <div class="">
+                            <p style="font-size: 12px;">Gọi mua hàng</p>
+                            <p style="font-size: 12px;">
+                                <a href="tel:0376581562" style="text-decoration: none;">
+                                    <strong>0359804162</strong>
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="wrap__icon-item">
+                        <i class="fa-solid fa-bell" style="color: #ffffff;"></i>
+                        <p class="ms-2" style="font-size: 14px;">Thông báo</p>
+                        <div class="wrap__list-notify-nav">
+                            <div class="wrap__notify-nav-header">
+                                <p class="text-start p-2">Thông báo gần đây</p>
+                            </div>
+                            <div class="wrap__notify-nav-body">
+                                <div class="wrap__item-notify-nav">
+                                    <img style="width: 20%;" src="../img/gh-cr0.webp" alt="">
+                                    <div>
+                                        <h6 class="text-start ms-2">Đơn hàng của bạn đã được giao</h6>
+                                        <p class="text-break text-start ms-2">Đơn hàng của bạn sẽ được giao vào ngày 27/03/2025
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div style="border-top: 1px solid #dadada;" class="wrap__notify-nav-footer p-2">
+                                <button class="btn btn-sm btn-dark">Xem tất cả</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="wrap__icon-item">
+                        <i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i>
+                        <p class="ms-2" style="font-size: 14px;">Giỏ hàng</p>
+                        <div class="wrap__list-notify-nav" style="right: 65px">
+                            <div class="wrap__notify-nav-header">
+                                <p class="text-start p-2">Sản phẩm mới thêm</p>
+                            </div>
+                            <div class="wrap__notify-nav-body wrap__notify-cart">
+                                <!-- Vẽ giao diện list cart -->
+
+                            </div>
+                            <div style="border-top: 1px solid #dadada;" class="wrap__notify-nav-footer p-2">
+                                <a href="../html/giohang.html" role="button" class="btn btn-sm btn-dark">Xem giỏ
+                                hàng</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="input-group flex-nowrap me-3" style="width: 50%; ">
+                        <input type="text" class="form-control" placeholder="Tìm kiếm.." aria-label="Username" aria-describedby="addon-wrapping">
+                        <div class="input-group-result">
+                            <!--giao diện kết quả tìm kiếm -->
+                            <div class="d-flex align-items-center">
+                                <a style="text-decoration: none; color: #000;" href="../html/sanpham.html" class="ms-3 flex-grow-1">
+                                Sản phẩm mới ra mắt
+                                <img src="../img/icons8-sale-90.png" alt="">
+                            </a>
+                                <img style="width: 15%;" src="../img/predator-helios-neo-16-mini-cart01.webp" alt="">
+                            </div>
+                        </div>
+                        <span class="input-group-text" id="addon-wrapping">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </span>
+                    </div>
+                    <div class="wrap__icon-user">
+                        <a href="../html/dangnhap.html" class="block-item-user">
+                            <i class="fa-solid fa-user" style="color: #ffffff;"></i>
+                        </a>
+                    </div>
+
+                </form>
+            </div>
+        </nav>
+
+        <!-- carousel -->
+        <div class="container">
+            <div style="margin-top: 62px;" class="carousel slide" id="carouselDemo">
+                <div class="carousel-inner">
+
+                    <div class="carousel-item">
+                        <img src="../img/carousel-home2.webp" class="w-100">
+                    </div>
+                    <div class="carousel-item active">
+                        <img src="https://laptopaz.vn/media/banner/18_Mare95ffd274c039d51bb5b9fa0e7e5dbef.jpg" class="w-100">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselDemo" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"> </span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselDemo" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"> </span>
+                </button>
+            </div>
+        </div>
+
+        <!-- subnav -->
+        <div class="container mx-auto row d-flex justify-content-center home" style="margin-top: 0px; padding: 0 18px;">
+            <div class="row" style="    box-shadow: 0 0 5px #c3c3c3;
+        border-radius: 5px;">
+                <div class="col-2">
+                    <div class="row">
+                        <div class="col-12 d-flex align-items-center justify-content-center">
+                            <img style="width: 90%; height: 90%;border-radius: 5px;" src="../img/bottomCarousel1__Home.webp" alt="">
+                        </div>
+                        <div class="col-12 d-flex align-items-center justify-content-center">
+                            <img style="width: 90%; height: 90%;border-radius: 5px;" src="../img/bottomCarousel3__Home.webp" alt="">
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-md-8 ">
+                    <div class="home-subnav">
+                        <div class="subnav-list row container">
+                            <div class="subnav-item col-3 ">
+                                <img style="width: 100%;" src="../img/home-review1.webp" alt="">
+                            </div>
+                            <div class="subnav-item col-3 ">
+                                <img style="width: 100%;" src="../img/home-review2.webp" alt="">
+                            </div>
+                            <div class="subnav-item col-3 ">
+                                <img style="width: 100%;" src="../img/home-review3.webp" alt="">
+                            </div>
+                            <div class="subnav-item col-3 ">
+                                <img style="width: 100%;" src="../img/home-review4.webp" alt="">
+                            </div>
+                            <div class="subnav-item col-3 ">
+                                <button class="btn btn-sm btn-success">Mua ngay</button>
+                            </div>
+                            <div class="subnav-item col-3 ">
+                                <button class="btn btn-sm btn-success">Mua ngay</button>
+                            </div>
+                            <div class="subnav-item col-3 ">
+                                <button class="btn btn-sm btn-success">Mua ngay</button>
+                            </div>
+                            <div class="subnav-item col-3 ">
+                                <button class="btn btn-sm btn-success">Mua ngay</button>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="row">
+                        <div class="col-12 d-flex align-items-center justify-content-center">
+                            <img style="width: 90%; height: 90%;border-radius: 5px;" src="../img/sub_nav.jpg" alt="">
+                        </div>
+                        <div class="col-12 d-flex align-items-center justify-content-center">
+                            <img style="width: 90%; height: 90%;border-radius: 5px;" src="../img/bottomCarousel2__Home.webp" alt="">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <label for="brandFilter" class="form-label">Chọn hãng laptop:</label>
+        <select id="brandFilter" class="form-select" aria-label="Chọn hãng">
+            <option value="">Tất cả</option>
+            <option value="HP">HP</option>
+            <option value="Lenovo">Lenovo</option>
+            <option value="Acer">Acer</option>
+            <option value="MSI">MSI</option>
+            <option value="Apple">Apple</option>
+        </select>
+
+        <style>
+            /* Định dạng cho select */
+            
+            .form-select {
+                background-color: #d41c2b;
+                /* Màu nền nổi bật */
+                color: white;
+                /* Màu chữ trắng */
+                border: 3px solid #a32b8f;
+                /* Đường viền */
+                border-radius: 5px;
+                /* Bo góc */
+                padding: 10px;
+                /* Khoảng cách bên trong */
+                font-size: 1.1rem;
+                /* Kích thước chữ */
+                transition: background-color 0.3s ease;
+                /* Hiệu ứng chuyển màu */
+            }
+            
+            .form-select:focus {
+                background-color: #df8ea1;
+                /* Màu nền khi chọn */
+                border-color: #03070b;
+                /* Đường viền khi chọn */
+                box-shadow: #d07a8e;
+                /* Bỏ hiệu ứng bóng */
+            }
+            /* Định dạng cho nhãn */
+            
+            .form-label {
+                font-weight: bold;
+                /* Chữ đậm */
+                margin-bottom: 5px;
+                /* Khoảng cách dưới */
+            }
+        </style>
+
+        <div class="row" id="productList">
+            <!-- Danh sách sản phẩm -->
+            <div class="col-lg-3 col-md-4 col-sm-6 mb-4 product" data-brand="HP">
+                <div class="card">
+                    <img src="https://newtechshop.vn/wp-content/uploads/2024/03/9340-chuan.jpg" class="card-img-top" alt="Laptop HP">
+                    <div class="card-body">
+                        <h5 class="card-title">Laptop HP Pavilion 14</h5>
+                        <p class="card-text">Giá: 15,000,000 VNĐ</p>
+                        <a href="chitietsanpham.html" class="btn btn-danger">Xem chi tiết</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 mb-4 product" data-brand="HP">
+                <div class="card">
+                    <img src="https://newtechshop.vn/wp-content/uploads/2023/12/Lenovo-thinkpad-x1-nano-gen-1-1.jpg" class="card-img-top" alt="Laptop HP">
+                    <div class="card-body">
+                        <h5 class="card-title">Laptop HP proBook 440</h5>
+                        <p class="card-text">Giá: 17,500,000 VNĐ</p>
+                        <a href="chitietsanpham.html" class="btn btn-danger">Xem chi tiết</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 mb-4 product" data-brand="Lenovo">
+                <div class="card">
+                    <img src="https://newtechshop.vn/wp-content/uploads/2023/10/lenovo-thinkpad-x1-carbon-gen11.jpg" class="card-img-top" alt="Laptop Lenovo">
+                    <div class="card-body">
+                        <h5 class="card-title">Laptop Lenovo IdeaPad 1</h5>
+                        <p class="card-text">Giá: 22,000,000 VNĐ</p>
+                        <a href="#" class="btn btn-danger">Xem chi tiết</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 mb-4 product" data-brand="Lenovo">
+                <div class="card">
+                    <img src="https://newtechshop.vn/wp-content/uploads/2024/06/Hinh-nen-1.jpg" class="card-img-top" alt="Laptop Lenovo">
+                    <div class="card-body">
+                        <h5 class="card-title">Laptop Lenovo Gaming LOQ</h5>
+                        <p class="card-text">Giá: 34,500,000 VNĐ</p>
+                        <a href="chitietsanpham.html" class="btn btn-danger">Xem chi tiết</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 mb-4 product" data-brand="Acer">
+                <div class="card">
+                    <img src="https://newtechshop.vn/wp-content/uploads/2024/05/lenovo-thinkpad-p1-gen-5-1662697446.jpg" class="card-img-top" alt="Laptop Acer">
+                    <div class="card-body">
+                        <h5 class="card-title">Laptop Acer Sprire 7 Gaming</h5>
+                        <p class="card-text">Giá: 33,500,000 VNĐ</p>
+                        <a href="chitietsanpham.html" class="btn btn-danger">Xem chi tiết</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 mb-4 product" data-brand="Acer">
+                <div class="card">
+                    <img src="https://ttcenter.com.vn/uploads/product/s4k6acy1-1257-lenovo-legion-5-r7000-aph9-ryzen-7-7840h-16gb-512gb-rtx-4060-8gb-15-6-fhd-144hz-new.jpg" class="card-img-top" alt="Laptop Acer">
+                    <div class="card-body">
+                        <h5 class="card-title">Laptop Acer Gaming AN515</h5>
+                        <p class="card-text">Giá: 15,000,000 VNĐ</p>
+                        <a href="chitietsanpham.html" class="btn btn-danger">Xem chi tiết</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 mb-4 product" data-brand="MSI">
+                <div class="card">
+                    <img src="https://newtechshop.vn/wp-content/uploads/2024/03/9440-chuan.jpg" class="card-img-top" alt="Laptop MSI">
+                    <div class="card-body">
+                        <h5 class="card-title">Laptop MSI Gaming Vector</h5>
+                        <p class="card-text">Giá: 18,000,000 VNĐ</p>
+                        <a href="chitietsanpham.html" class="btn btn-danger">Xem chi tiết</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 mb-4 product" data-brand="MSI">
+                <div class="card">
+                    <img src="https://newtechshop.vn/wp-content/uploads/2023/12/Dell-2.jpg" class="card-img-top" alt="Laptop MSI">
+                    <div class="card-body">
+                        <h5 class="card-title">Laptop MSI Modern 14</h5>
+                        <p class="card-text">Giá: 20,000,000 VNĐ</p>
+                        <a href="chitietsanpham.html" class="btn btn-danger">Xem chi tiết</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 mb-4 product" data-brand="Apple">
+                <div class="card">
+                    <img src="https://newtechshop.vn/wp-content/uploads/2023/12/Dell-XPS-13-9315-2022-i5-8GB-512GB-2.jpg" class="card-img-top" alt="Laptop Apple">
+                    <div class="card-body">
+                        <h5 class="card-title">MacBook Air 15inch M2</h5>
+                        <p class="card-text">Giá: 25,000,000 VNĐ</p>
+                        <a href="chitietsanpham.html" class="btn btn-danger">Xem chi tiết</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 mb-4 product" data-brand="Apple">
+                <div class="card">
+                    <img src="https://newtechshop.vn/wp-content/uploads/2023/02/Dell-XPS-13-2in1-16GB-512GB.jpg" class="card-img-top" alt="Laptop Apple">
+                    <div class="card-body">
+                        <h5 class="card-title">MacBook Pro M3</h5>
+                        <p class="card-text">Giá: 30,000,000 VNĐ</p>
+                        <a href="chitietsanpham.html" class="btn btn-danger">Xem chi tiết</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sản phẩm HP -->
+            <div class="col-lg-3 col-md-4 col-sm-6 mb-4 product" data-brand="HP">
+                <div class="card">
+                    <img src="https://newtechshop.vn/wp-content/uploads/2024/04/HP-ELITEBOOK-840-G10-i7-1355U-16GB-512GB-876B9PA.png" class="card-img-top" alt="Laptop HP">
+                    <div class="card-body">
+                        <h5 class="card-title">Laptop HP Pavilion AERO</h5>
+                        <p class="card-text">Giá: 26,500,000 VNĐ</p>
+                        <a href="chitietsanpham.html" class="btn btn-danger">Xem chi tiết</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 mb-4 product" data-brand="HP">
+                <div class="card">
+                    <img src="https://newtechshop.vn/wp-content/uploads/2024/04/HP-15-FD0083TU-i7-1355U-16GB-512GB.png" class="card-img-top" alt="Laptop HP">
+                    <div class="card-body">
+                        <h5 class="card-title">Laptop HP Gaming Vitus</h5>
+                        <p class="card-text">Giá: 17,000,000 VNĐ</p>
+                        <a href="chitietsanpham.html" class="btn btn-danger">Xem chi tiết</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sản phẩm Lenovo -->
+            <div class="col-lg-3 col-md-4 col-sm-6 mb-4 product" data-brand="Lenovo">
+                <div class="card">
+                    <img src="https://newtechshop.vn/wp-content/uploads/2024/07/9345-4.jpg" class="card-img-top" alt="Laptop Lenovo">
+                    <div class="card-body">
+                        <h5 class="card-title">Laptop Lenovo Gaming Legion</h5>
+                        <p class="card-text">Giá: 23,500,000 VNĐ</p>
+                        <a href="chitietsanpham.html" class="btn btn-danger">Xem chi tiết</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 mb-4 product" data-brand="Lenovo">
+                <div class="card">
+                    <img src="https://newtechshop.vn/wp-content/uploads/2024/09/1-2.jpg" class="card-img-top" alt="Laptop Lenovo">
+                    <div class="card-body">
+                        <h5 class="card-title">Laptop Lenovo Yoga Book 9</h5>
+                        <p class="card-text">Giá: 24,000,000 VNĐ</p>
+                        <a href="chitietsanpham.html" class="btn btn-danger">Xem chi tiết</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sản phẩm Acer -->
+            <div class="col-lg-3 col-md-4 col-sm-6 mb-4 product" data-brand="Acer">
+                <div class="card">
+                    <img src="https://newtechshop.vn/wp-content/uploads/2024/09/4-1.jpg" class="card-img-top" alt="Laptop Acer">
+                    <div class="card-body">
+                        <h5 class="card-title">Laptop Acer Swift Life 14 AI</h5>
+                        <p class="card-text">Giá: 22,000,000 VNĐ</p>
+                        <a href="chitietsanpham.html" class="btn btn-danger">Xem chi tiết</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 mb-4 product" data-brand="Acer">
+                <div class="card">
+                    <img src="https://newtechshop.vn/wp-content/uploads/2022/10/Surface-Pro-9-i7-16GB-512GB.jpg" class="card-img-top" alt="Laptop Acer">
+                    <div class="card-body">
+                        <h5 class="card-title">Laptop Acer Swift 3</h5>
+                        <p class="card-text">Giá: 24,500,000 VNĐ</p>
+                        <a href="chitietsanpham.html" class="btn btn-danger">Xem chi tiết</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sản phẩm MSI -->
+            <div class="col-lg-3 col-md-4 col-sm-6 mb-4 product" data-brand="MSI">
+                <div class="card">
+                    <img src="https://newtechshop.vn/wp-content/uploads/2024/03/Anh-3.jpg" class="card-img-top" alt="Laptop MSI">
+                    <div class="card-body">
+                        <h5 class="card-title">Laptop MSI Modern 15</h5>
+                        <p class="card-text">Giá: 21,000,000 VNĐ</p>
+                        <a href="chitietsanpham.html" class="btn btn-danger">Xem chi tiết</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 mb-4 product" data-brand="MSI">
+                <div class="card">
+                    <img src="https://newtechshop.vn/wp-content/uploads/2023/05/LG-Gram-14-inch-i5-16GB-256GB-5.jpg" class="card-img-top" alt="Laptop MSI">
+                    <div class="card-body">
+                        <h5 class="card-title">Laptop MSI CyBorgo 15</h5>
+                        <p class="card-text">Giá: 22,500,000 VNĐ</p>
+                        <a href="chitietsanpham.html" class="btn btn-danger">Xem chi tiết</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sản phẩm Apple -->
+            <div class="col-lg-3 col-md-4 col-sm-6 mb-4 product" data-brand="Apple">
+                <div class="card">
+                    <img src="https://newtechshop.vn/wp-content/uploads/2023/05/1-lg-gram-16-inch-i5-16gb-512gb.png" class="card-img-top" alt="Laptop Apple">
+                    <div class="card-body">
+                        <h5 class="card-title">MacBook Air M3</h5>
+                        <p class="card-text">Giá: 28,000,000 VNĐ</p>
+                        <a href="chitietsanpham.html" class="btn btn-danger">Xem chi tiết</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 mb-4 product" data-brand="Apple">
+                <div class="card">
+                    <img src="https://newtechshop.vn/wp-content/uploads/2024/05/5.jpg" class="card-img-top" alt="Laptop Apple">
+                    <div class="card-body">
+                        <h5 class="card-title">Macbook Air M2 2022</h5>
+                        <p class="card-text">Giá: 32,000,000 VNĐ</p>
+                        <a href="chitietsanpham.html" class="btn btn-danger">Xem chi tiết</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <footer>
+        <div class="wrap-footer container mt-4">
+            <div class="row mt-3 ">
+                <!-- Tổng đài  -->
+                <div class="col-lg-3 col-md-4 col-xs-6">
+                    <div class="footer-list-info">
+                        <h5 class="footer__title">Tổng đài hỗ trợ</h5>
+                        <div class="footer__wrap-list-info">
+                            <ul class="footer-list-items">
+                                <li class="footer__item">
+                                    <span class="text-white">Gọi mua hàng:</span>
+                                    <a href="tel:037658562" class="footer__link-item text-primary">
+                                            0359804162
+                                        </a>
+                                </li>
+                                <li class="footer__item">
+                                    <span class="text-white">CSKH:</span>
+                                    <a href="" class="footer__link-item text-primary">
+                                            0359804162
+                                        </a>
+                                </li>
+                                <li class="footer__item">
+                                    <span class="text-white">Email:</span>
+                                    <a href="mailto:vodangkhoa270904@gmail.com" class="footer__link-item text-primary">
+                                            hoangthingocngan73@gmail.com
+                                        </a>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-xs-6">
+                    <div class="footer-list-info">
+                        <h5 class="footer__title">Hình thức thanh toán</h5>
+                        <div class="footer__wrap-list-info">
+                            <ul class="footer-list-items">
+                                <div class="row mb-1">
+                                    <div class="col-3">
+                                        <li class="footer__item">
+                                            <img src="../img/pay_1.webp" alt="" class="footer__img-item">
+                                        </li>
+                                    </div>
+                                    <div class="col-3">
+                                        <li class="footer__item">
+                                            <img src="../img/pay_2.webp" alt="" class="footer__img-item">
+                                        </li>
+                                    </div>
+                                    <div class="col-3">
+                                        <li class="footer__item">
+                                            <img src="../img/pay_3.webp" alt="" class="footer__img-item">
+                                        </li>
+                                    </div>
+                                    <div class="col-3">
+                                        <li class="footer__item">
+                                            <img src="../img/pay_4.webp" alt="" class="footer__img-item">
+                                        </li>
+                                    </div>
+
+                                </div>
+
+                        </div>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="row mt-3" style="border-top: 1px solid #c3c3c3;">
+            <div class="footer__wrap-media text-center">
+                <a href="" class="footer__wrap-link-media">
+                    <i class="footer__icon-media fa-brands fa-facebook"></i>
+                </a>
+                <a href="" class="footer__wrap-link-media">
+                    <i class="footer__icon-media fa-brands fa-instagram"></i>
+                </a>
+            </div>
+            <div style="font-size: 14px;" class="footer__address text-white text-center">
+
+                <p>© 2024 - Bản quyền thuộc về Neyguang</p>
+            </div>
+        </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Hàm lọc sản phẩm theo hãng
+        document.getElementById('brandFilter').addEventListener('change', function() {
+            const selectedBrand = this.value;
+            const products = document.querySelectorAll('.product');
+
+            products.forEach(product => {
+                if (selectedBrand === "" || product.getAttribute('data-brand') === selectedBrand) {
+                    product.style.display = 'block';
+                } else {
+                    product.style.display = 'none';
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

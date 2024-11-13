@@ -1,0 +1,42 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    z-index: home;
+    : 1000;
+    /* Đảm bảo navbar luôn nằm trên các phần tử khác */
+    width: 100%;
+    /* Đảm bảo navbar chiếm toàn bộ chiều rộng */
+}
+
+.banner img {
+    border-radius: 20px;
+}
+
+.featured-products .card,
+.deals .card {
+    border: none;
+    border-radius: 10px;
+}
+
+.featured-products .card img {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    height: 250px;
+    object-fit: cover;
+}
+
+.brand-section img {
+    max-width: 40px;
+    margin: auto;
+    transition: transform 0.2s;
+}
+
+.brand-section img:hover {
+    transform: scale(1.1);
+}
+
+footer {
+    font-size: 14px;
+}
